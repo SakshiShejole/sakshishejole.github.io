@@ -2,74 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Academics | Sakshi Shejole</title>
+  <title>Academics – Sakshi Shejole</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap');
+
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fefefe;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      color: #333;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+      color: #fff;
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    header, footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: rgba(0,0,0,0.5);
     }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2.5rem;
+      color: #f9d71c;
+    }
+
+    nav {
+      text-align: center;
+      background: #111;
+      padding: 1rem;
+    }
+
     nav a {
-      margin-right: 15px;
+      color: #f1f1f1;
       text-decoration: none;
-      color: #007acc;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
     }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #f9d71c;
     }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ffdd57;
+      margin-top: 2rem;
+    }
+
     ul {
-      margin-left: 20px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: url('https://i.ibb.co/8c5LFhP/stars-bg.jpg') repeat;
+      background-size: cover;
+      animation: moveStars 100s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 0; }
     }
   </style>
 </head>
 <body>
-  <h1>Academic Background</h1>
+  <div class="stars"></div>
+
+  <header>
+    <h1>My Academic Journey</h1>
+    <p>Where passion for space meets scientific pursuit 🚀</p>
+  </header>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="academics.html">Academics</a>
+    <a href="about.html">About</a>
     <a href="volunteer.html">Volunteering</a>
     <a href="writings.html">Writings</a>
     <a href="poetry.html">Poetry</a>
-    <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <h2>🎓 Education</h2>
-  <ul>
-    <li><strong>M.Sc. in Scientific Computing</strong><br>
-        [Your University Name], [Year Completed]</li>
-    <li><strong>B.Tech in Information Technology</strong><br>
-        [Your College Name], [Year Completed]</li>
-  </ul>
+  <section>
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>M.Sc. in Scientific Computing</strong> – Advanced computational modeling and simulations</li>
+      <li><strong>B.E. in Information Technology</strong> – Foundation in computer science, data structures, and software engineering</li>
+    </ul>
 
-  <h2>🔬 Research Experience</h2>
-  <ul>
-    <li><strong>GANs for Synthetic Galaxy Images</strong> – MIT<br>
-        Developed GAN-based models to generate realistic galaxy images. Trained and evaluated on the Virgo Millennium Simulation dataset.</li>
+    <h2>🔬 Research Work</h2>
+    <ul>
+      <li><strong>Master’s Thesis at MIT:</strong> Worked on GANs for synthetic galaxy image generation and super-resolution techniques for N-body simulations</li>
+      <li><strong>PhD Project Plan:</strong> Deep learning-based super-resolution accelerator for galaxy formation simulations using the IllustrisTNG dataset</li>
+    </ul>
 
-    <li><strong>Super-Resolution for N-Body Simulations</strong><br>
-        Designed a deep learning accelerator for cosmological simulation upscaling using 2D projected mass density maps from the IllustrisTNG dataset.</li>
-
-    <li><strong>Hindi QA System using LLMs</strong><br>
-        Built an LLM-based Hindi question answering system with AI data feeds for language understanding and natural response generation.</li>
-  </ul>
-
-  <h2>📚 Teaching Experience</h2>
-  <ul>
-    <li>Taught Machine Learning, Deep Learning, and Artificial Intelligence to undergraduate students.</li>
-    <li>Conducted workshops and mentorship sessions on coding, AI projects, and research writing.</li>
-  </ul>
+    <h2>📚 Achievements</h2>
+    <ul>
+      <li>UGC NET (Computer Science & Applications) Qualified – December 2024</li>
+      <li>High Performance Computing for Astrophysics Workshop – SKA-India & IIT Kharagpur</li>
+      <li>AI Prompt Engineering & Hindi QA Language Model Project</li>
+    </ul>
+  </section>
 
   <footer>
-    <p>© 2025 Sakshi Shejole • <a href="index.html">Back to Home</a></p>
+    &copy; 2025 Sakshi Shejole | Astrogirl ✨
   </footer>
 </body>
 </html>
+
