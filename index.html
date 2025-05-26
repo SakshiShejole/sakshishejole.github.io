@@ -2,119 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Astrogirl – Sakshi Shejole</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astrogirl — About Me</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap');
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
-      color: #fff;
+    /* Reset & base */
+    body, html {
+      margin: 0; padding: 0; height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #e0e0e0;
+      background-color: #000;
+      overflow-x: hidden;
     }
 
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: rgba(0,0,0,0.4);
+    /* Background video styling */
+    #bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.5) contrast(1.2);
+    }
+
+    /* Overlay container */
+    .content {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+      background: rgba(0, 0, 30, 0.65);
+      border-radius: 12px;
+      box-shadow: 0 0 30px 6px rgba(0, 0, 50, 0.8);
+      margin-top: 5vh;
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif;
       font-size: 3rem;
+      margin-bottom: 0.3rem;
+      color: #f0c929;
+      text-align: center;
+      font-weight: 700;
+      text-shadow: 0 0 10px #f0c929aa;
+    }
+
+    h2 {
+      color: #e6a71f;
+      margin-top: 2rem;
       margin-bottom: 0.5rem;
-      color: #f9d71c;
+      border-bottom: 2px solid #e6a71f;
+      padding-bottom: 0.2rem;
+      font-weight: 600;
     }
 
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #cce6ff;
+    p, ul {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #ddd;
     }
 
-    nav {
-      text-align: center;
-      background: #111;
-      padding: 1rem 0;
+    ul {
+      padding-left: 1.5rem;
     }
 
-    nav a {
-      color: #f1f1f1;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s;
+    li {
+      margin-bottom: 0.5rem;
     }
 
-    nav a:hover {
-      color: #f9d71c;
-    }
-
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .highlight {
-      color: #f9d71c;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #000;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: url('https://i.ibb.co/8c5LFhP/stars-bg.jpg') repeat;
-      background-size: cover;
-      animation: moveStars 100s linear infinite;
-    }
-
-    @keyframes moveStars {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 0; }
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .content {
+        margin-top: 2vh;
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="stars"></div>
 
-  <header>
-    <h1>Astrogirl</h1>
-    <p class="subtitle">Exploring the Universe, One Star at a Time ✨</p>
-  </header>
+  <!-- Background video -->
+  <video autoplay muted loop id="bg-video" playsinline>
+    <source src="https://svs.gsfc.nasa.gov/vis/a000000/a003100/a003155/galaxy_collision_1080p.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-  <nav>
-    <a href="about.html">About</a>
-    <a href="academics.html">Academics</a>
-    <a href="volunteer.html">Volunteering</a>
-    <a href="writings.html">Writings</a>
-    <a href="poetry.html">Poetry</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <!-- Main content -->
+  <div class="content" role="main">
+    <h1>Astrogirl 🌟</h1>
+    <p>I'm deeply passionate about astronomy and space science, with years of experience in outreach, education, and hands-on astronomical activities. From organizing study tours to radio telescopes and observatories, to conducting sky-gazing trips for school children, I've been committed to sharing the wonders of the cosmos with everyone.</p>
 
-  <section>
-    <h2>Welcome to My Universe 🌌</h2>
-    <p>
-      I'm <span class="highlight">Sakshi Shejole</span> – an aspiring researcher, educator, and dedicated astronomy enthusiast. This is my space to share what I love most: the cosmos, celestial stories, and my scientific journey. 🌠
-    </p>
-    <p>
-      Dive into my <a href="writings.html" style="color: #ffd700;">writings</a>, experience my <a href="poetry.html" style="color: #ffd700;">poetry</a>, or explore my <a href="academics.html" style="color: #ffd700;">academic</a> and outreach efforts. 
-    </p>
-  </section>
+    <h2>🪐 Astronomy Outreach</h2>
+    <ul>
+      <li>Successfully organized visits to:
+        <ul>
+          <li>Giant Meterwave Radio Telescope (2015)</li>
+          <li>Nehru Planetarium, Mumbai (2016)</li>
+          <li>Girawali Observatory, IUCAA (2016)</li>
+        </ul>
+      </li>
+      <li>Conducted sky-gazing trips for rural school children, featuring astro-games, ISS and HST passes, and the Geminids Meteor Shower (2015)</li>
+      <li>Core member of Jyotirvidya Parisansthan team that built a small-scale LIGO model for IUCAA (2016)</li>
+    </ul>
 
-  <footer>
-    &copy; 2025 Sakshi Shejole | Designed by Astrogirl ✨
-  </footer>
+    <h2>📢 Talks & Webinars</h2>
+    <ul>
+      <li>Live webinar on Astronomical Simulations by Parbhani Astronomical Society (2020)</li>
+      <li>Demonstration of astronomical software at Rajashree Shahu College of Engineering, Pune</li>
+      <li>Educational talks on:
+        <ul>
+          <li>Introduction to Mars for Z.P. Cluster School, Akola</li>
+          <li>Mars Orbiter Mission for government school students</li>
+          <li>Our Solar System for Science Club, Akola</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>Qualified UGC NET (Computer Science & Applications), December 2024 – Ph.D. Eligibility</li>
+      <li>Participated in the High Performance Computing for Astrophysics and Astronomy workshop by SKA-India Consortium and IIT Kharagpur (2021)</li>
+      <li>Event Organizer and Coordinator for:
+        <ul>
+          <li>Aditya – Explore Our Sun, Astroquiz, Mobile Planetarium (IUCAA-SciPOP & JVP)</li>
+          <li>Hubble and Beyond Exhibition (2015)</li>
+        </ul>
+      </li>
+      <li>Astronomy Club “Best Event Award” (D.Y. Patil College) – two consecutive years</li>
+      <li>Head Representative of the Science Club in First Year Engineering, PCCOE, Pune (2013–14)</li>
+      <li>Completed Basic Course in Practical Astronomy at Kesariwada Observatory, Pune (2014)</li>
+    </ul>
+  </div>
+
 </body>
 </html>
+
