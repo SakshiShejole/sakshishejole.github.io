@@ -2,55 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Astrogirl - Academic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astrogirl | Academics</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      list-style: none;
+    }
+    .navbar li {
+      margin: 0 1rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #ffccff;
+    }
+  </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <nav class="navbar">
-  <ul>
-    <li><a href="index.html">About</a></li>
-    <li><a href="academic.html">Academic</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
-  <div class="container">
-    <h1>Academic Background</h1>
-    <p>
-      I have a strong academic foundation in computer science and astrophysics,
-      enriched by practical experience and ongoing research.
-    </p>
-
-    <h2>Education</h2>
-    <ul>
-      <li><strong>M.Sc. in Scientific Computing</strong> — 2024</li>
-      <li><strong>B.E. in Information Technology Engineering</strong> — 2016</li>
-      <li><strong>Qualified UGC NET (Computer Science & Applications)</strong> — Dec 2024 (Ph.D. Eligibility)</li>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academic.html">Academics</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="writing.html">Writings</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
+  </nav>
 
-    <h2>Workshops & Courses</h2>
-    <ul>
-      <li>High Performance Computing for Astrophysics and Astronomy — SKA-India Consortium & IIT Kharagpur (2021)</li>
-      <li>Basic Course in Practical Astronomy — Kesariwada Observatory, Pune (2014)</li>
-      <li>Astrophysics & Astronomy research-oriented workshops and seminars</li>
-    </ul>
+  <div class="content">
+    <h1>🎓 Academic Background</h1>
+    <p>I began my academic journey with a Bachelor's in Engineering in Information Technology, where I developed a strong foundation in computing, programming, and software systems. My interest in scientific applications of technology led me to pursue a Master's degree in Scientific Computing. This interdisciplinary field allowed me to merge my love for science with computational techniques, ultimately guiding me toward research in astrophysics and artificial intelligence.</p>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>Scientific computing and simulations</li>
-      <li>Deep learning and AI applications in astrophysics</li>
-      <li>Data analysis with Python, C++, and related tools</li>
-      <li>Research in cosmology, galaxy formation, and computational astrophysics</li>
-    </ul>
+    <p>Throughout my studies, I have focused on applying machine learning, deep learning, and AI methodologies to scientific datasets, with a growing interest in cosmological simulations and data-driven astronomy. I’ve successfully taught subjects like Machine Learning, Deep Learning, and Artificial Intelligence to undergraduate students, enhancing my understanding through academic engagement and instruction.</p>
 
-    <footer>
-      <p>&copy; 2025 Astrogirl | Sakshi Shejole</p>
-    </footer>
+    <p>In 2024, I qualified the UGC NET exam in Computer Science & Applications, earning eligibility for doctoral research and reaffirming my commitment to academic excellence. I also participated in several domain-specific workshops and training programs that deepened my expertise in high-performance computing and research techniques used in astronomy and astrophysics.</p>
   </div>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="galaxy_background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </body>
 </html>
 
