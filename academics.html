@@ -6,44 +6,45 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap');
 
-    /* Full page with flowing galaxy background */
-    body {
+    /* Make body full screen and hide scroll overflow horizontally */
+    body, html {
       margin: 0;
       padding: 0;
+      height: 100%;
+      overflow-x: hidden;
       font-family: 'Open Sans', sans-serif;
       color: #fff;
-      background: url('https://i.ibb.co/vzJ9Ffw/galaxy-seamless.jpg') repeat-x;
-      background-size: cover;
-      animation: slideGalaxy 60s linear infinite;
-      min-height: 100vh;
-      overflow-x: hidden;
-      position: relative;
     }
 
-    /* Animation for sliding background */
-    @keyframes slideGalaxy {
-      0% { background-position: 0 0; }
-      100% { background-position: -2000px 0; }
+    /* Video background styling */
+    #bg-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.5) contrast(1.2);
     }
 
-    /* Overlay behind content for readability */
+    /* Content wrapper with semi-transparent overlay */
     .content-wrapper {
-      background: rgba(0, 0, 20, 0.75);
+      position: relative;
       max-width: 900px;
-      margin: 2rem auto;
+      margin: 3rem auto;
       padding: 2rem 3rem;
+      background: rgba(0, 0, 20, 0.75);
       border-radius: 12px;
       box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-      position: relative;
       z-index: 1;
     }
 
     header, footer {
       text-align: center;
-      padding: 1.5rem 0;
       font-family: 'Orbitron', sans-serif;
       color: #f9d71c;
       text-shadow: 0 0 10px #f9d71c;
+      margin-bottom: 1rem;
     }
 
     h1 {
@@ -96,9 +97,30 @@
       margin-top: 3rem;
       font-size: 0.9rem;
     }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .content-wrapper {
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Background video -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.videvo.net/videvo_files/video/free/2019-05/small_watermarked/190504_04_Earth_Space_04_preview.webm" type="video/webm">
+    <source src="https://cdn.videvo.net/videvo_files/video/free/2019-05/small_watermarked/190504_04_Earth_Space_04_preview.mp4" type="video/mp4">
+    <!-- Backup text -->
+    Your browser does not support the video tag.
+  </video>
+
   <div class="content-wrapper">
     <header>
       <h1>My Academic Journey</h1>
