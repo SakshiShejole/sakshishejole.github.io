@@ -2,102 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About Astrogirl | Sakshi Shejole</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Astrogirl</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #f5f8fa;
-      color: #2c3e50;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      opacity: 0.4;
+    }
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      list-style: none;
+    }
+    .navbar li {
+      margin: 0 1rem;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .content {
+      padding: 2rem;
       max-width: 900px;
       margin: auto;
-      padding: 2rem;
-      line-height: 1.6;
     }
-    h1, h2 {
-      color: #1a1a1a;
-    }
-    nav a {
-      margin-right: 20px;
-      text-decoration: none;
-      color: #0077cc;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
+    h1, h2, h3 {
+      color: #ffccff;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="academics.html">Academics</a>
-    <a href="volunteer.html">Volunteering</a>
-    <a href="writings.html">Writings</a>
-    <a href="poetry.html">Poetry</a>
-    <a href="contact.html">Contact</a>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academic.html">Academics</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="writing.html">Writings</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
 
-  <h1>🌟 About Me</h1>
-  <p>
-    I'm deeply passionate about astronomy and space science, with years of experience in outreach, education, and hands-on astronomical activities.
-    From organizing study tours to world-class observatories to inspiring rural students with sky-gazing events, I’ve committed my life to sharing the wonders of the cosmos.
-  </p>
+  <div class="content">
+    <h1>🌟 About Me</h1>
+    <p>I am an astronomy enthusiast, educator, and communicator with a strong background in space science outreach and research. My journey into the cosmos has been defined by an enduring love for the night sky and a mission to inspire others through education and immersive experiences. I've organized educational visits to prestigious facilities like the Giant Metrewave Radio Telescope, Nehru Planetarium, and Girawali Observatory. These opportunities enabled students and enthusiasts alike to connect directly with the universe through hands-on learning.</p>
 
-  <section>
-    <h2>🪐 Astronomy Outreach</h2>
-    <ul>
-      <li>Visits organized to:
-        <ul>
-          <li>Giant Meterwave Radio Telescope (2015)</li>
-          <li>Nehru Planetarium, Mumbai (2016)</li>
-          <li>Girawali Observatory, IUCAA (2016)</li>
-        </ul>
-      </li>
-      <li>Sky-gazing trips for rural school children featuring astro-games, ISS & HST passes, and the Geminids Meteor Shower (2015)</li>
-      <li>Core member in building a small-scale LIGO model for IUCAA with Jyotirvidya Parisansthan (2016)</li>
-    </ul>
-  </section>
+    <p>My passion led me to conduct sky-gazing trips for rural schoolchildren, combining astronomy with engaging activities like astro-games, real-time satellite tracking, and meteor shower observations. One of the milestones in my outreach career was being part of a core team that built a functional small-scale model of LIGO under the banner of Jyotirvidya Parisansthan, in collaboration with IUCAA.</p>
 
-  <section>
-    <h2>📢 Talks & Webinars</h2>
-    <ul>
-      <li>Live webinar on Astronomical Simulations – Parbhani Astronomical Society (2020)</li>
-      <li>Demonstration of astronomy software at RSCOE, Pune</li>
-      <li>Educational talks:
-        <ul>
-          <li>Introduction to Mars – Z.P. Cluster School, Akola</li>
-          <li>Mars Orbiter Mission – Government school students</li>
-          <li>Our Solar System – Science Club, Akola</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
+    <p>Beyond field activities, I’ve delivered live webinars and on-site demonstrations of astronomical software to engineering students and budding astronomers. My talks have introduced diverse audiences to topics ranging from planetary science to space missions like the Mars Orbiter. Each interaction, whether with children in village schools or students in colleges, has been an opportunity to nurture scientific curiosity.</p>
 
-  <section>
-    <h2>🏆 Achievements</h2>
-    <ul>
-      <li>UGC NET Qualified (Computer Science & Applications), December 2024</li>
-      <li>High Performance Computing for Astrophysics Workshop – SKA-India & IIT Kharagpur (2021)</li>
-      <li>Event Organizer for:
-        <ul>
-          <li>Aditya – Explore Our Sun, Astroquiz, Mobile Planetarium</li>
-          <li>Hubble and Beyond Exhibition (2015)</li>
-        </ul>
-      </li>
-      <li>Astronomy Club “Best Event” Award – D.Y. Patil College (2 years)</li>
-      <li>Science Club Head Representative – First Year Engineering, PCCOE, Pune (2013–14)</li>
-      <li>Completed Basic Course in Practical Astronomy – Kesariwada Observatory, Pune (2014)</li>
-    </ul>
-  </section>
+    <p>Alongside outreach, I’ve achieved several academic and professional milestones. I qualified the UGC NET (Computer Science & Applications) exam in December 2024, securing eligibility for doctoral studies. I also participated in a high-impact workshop on High Performance Computing in Astrophysics, organized by SKA-India and IIT Kharagpur, equipping me with advanced computational skills for space research.</p>
 
-  <footer>
-    <p>© 2025 Sakshi Shejole – Astrogirl 🌌</p>
-  </footer>
+    <p>As an event organizer and team coordinator, I’ve led initiatives like the "Aditya – Explore Our Sun" campaign, astroquizzes, mobile planetarium sessions, and curated the "Hubble and Beyond" exhibition. My contributions have been recognized with back-to-back "Best Event" awards in the Astronomy Club during my college years, and I proudly represented my batch as the Head Science Club Representative in my first year of engineering.</p>
+
+    <p>I hold a Basic Course certificate in Practical Astronomy from the Kesariwada Observatory, which laid the foundation for my exploration of observational techniques and stargazing tools. From then on, I've remained a devoted Astrogirl—sharing the sky, one star at a time.</p>
+  </div>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="galaxy_background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 </body>
 </html>
+
