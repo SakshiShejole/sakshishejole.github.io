@@ -9,12 +9,12 @@
 
 /* Body and background */
 body {
+  background: url('star_background.jpg') no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: radial-gradient(ellipse at center, #000010, #000000);
-  color: #eee;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 /* Starry background animation */
