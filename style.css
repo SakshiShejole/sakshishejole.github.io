@@ -117,3 +117,35 @@ footer {
     font-size: 2rem;
   }
 }
+/* Navigation Bar Styles */
+.navbar {
+  background: rgba(0, 0, 30, 0.7);
+  padding: 12px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 30px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+  color: #ffdd00;
+  outline: none;
+}
+
