@@ -6,124 +6,140 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap');
 
+    /* Full page with flowing galaxy background */
     body {
       margin: 0;
       padding: 0;
       font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
       color: #fff;
+      background: url('https://i.ibb.co/vzJ9Ffw/galaxy-seamless.jpg') repeat-x;
+      background-size: cover;
+      animation: slideGalaxy 60s linear infinite;
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Animation for sliding background */
+    @keyframes slideGalaxy {
+      0% { background-position: 0 0; }
+      100% { background-position: -2000px 0; }
+    }
+
+    /* Overlay behind content for readability */
+    .content-wrapper {
+      background: rgba(0, 0, 20, 0.75);
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+      position: relative;
+      z-index: 1;
     }
 
     header, footer {
       text-align: center;
-      padding: 1.5rem;
-      background-color: rgba(0,0,0,0.5);
+      padding: 1.5rem 0;
+      font-family: 'Orbitron', sans-serif;
+      color: #f9d71c;
+      text-shadow: 0 0 10px #f9d71c;
     }
 
     h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
-      color: #f9d71c;
+      font-size: 2.8rem;
+      margin-bottom: 0.2rem;
     }
 
     nav {
       text-align: center;
-      background: #111;
-      padding: 1rem;
+      margin-bottom: 2rem;
     }
 
     nav a {
-      color: #f1f1f1;
+      color: #fff;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
-      transition: color 0.3s;
+      margin: 0 1rem;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
       color: #f9d71c;
+      text-shadow: 0 0 8px #f9d71c;
     }
 
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
+    section h2 {
       color: #ffdd57;
       margin-top: 2rem;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 600;
+      text-shadow: 0 0 5px #ffdd57;
     }
 
     ul {
       list-style: none;
       padding-left: 0;
+      margin-top: 0.8rem;
     }
 
     li {
-      margin-bottom: 1rem;
       background: rgba(255, 255, 255, 0.1);
       padding: 1rem;
+      margin-bottom: 1rem;
       border-radius: 8px;
+      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
     }
 
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: url('https://i.ibb.co/8c5LFhP/stars-bg.jpg') repeat;
-      background-size: cover;
-      animation: moveStars 100s linear infinite;
-    }
-
-    @keyframes moveStars {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 0; }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <div class="stars"></div>
+  <div class="content-wrapper">
+    <header>
+      <h1>My Academic Journey</h1>
+      <p>Where passion for space meets scientific pursuit 🚀</p>
+    </header>
 
-  <header>
-    <h1>My Academic Journey</h1>
-    <p>Where passion for space meets scientific pursuit 🚀</p>
-  </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="volunteer.html">Volunteering</a>
+      <a href="writings.html">Writings</a>
+      <a href="poetry.html">Poetry</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="volunteer.html">Volunteering</a>
-    <a href="writings.html">Writings</a>
-    <a href="poetry.html">Poetry</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+    <section>
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>M.Sc. in Scientific Computing</strong> – Advanced computational modeling and simulations</li>
+        <li><strong>B.E. in Information Technology</strong> – Foundation in computer science, data structures, and software engineering</li>
+      </ul>
 
-  <section>
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>M.Sc. in Scientific Computing</strong> – Advanced computational modeling and simulations</li>
-      <li><strong>B.E. in Information Technology</strong> – Foundation in computer science, data structures, and software engineering</li>
-    </ul>
+      <h2>🔬 Research Work</h2>
+      <ul>
+        <li><strong>Master’s Thesis at MIT:</strong> Worked on GANs for synthetic galaxy image generation and super-resolution techniques for N-body simulations</li>
+        <li><strong>PhD Project Plan:</strong> Deep learning-based super-resolution accelerator for galaxy formation simulations using the IllustrisTNG dataset</li>
+      </ul>
 
-    <h2>🔬 Research Work</h2>
-    <ul>
-      <li><strong>Master’s Thesis at MIT:</strong> Worked on GANs for synthetic galaxy image generation and super-resolution techniques for N-body simulations</li>
-      <li><strong>PhD Project Plan:</strong> Deep learning-based super-resolution accelerator for galaxy formation simulations using the IllustrisTNG dataset</li>
-    </ul>
+      <h2>📚 Achievements</h2>
+      <ul>
+        <li>UGC NET (Computer Science & Applications) Qualified – December 2024</li>
+        <li>High Performance Computing for Astrophysics Workshop – SKA-India & IIT Kharagpur</li>
+        <li>AI Prompt Engineering & Hindi QA Language Model Project</li>
+      </ul>
+    </section>
 
-    <h2>📚 Achievements</h2>
-    <ul>
-      <li>UGC NET (Computer Science & Applications) Qualified – December 2024</li>
-      <li>High Performance Computing for Astrophysics Workshop – SKA-India & IIT Kharagpur</li>
-      <li>AI Prompt Engineering & Hindi QA Language Model Project</li>
-    </ul>
-  </section>
-
-  <footer>
-    &copy; 2025 Sakshi Shejole | Astrogirl ✨
-  </footer>
+    <footer>
+      &copy; 2025 Sakshi Shejole | Astrogirl ✨
+    </footer>
+  </div>
 </body>
 </html>
+
 
