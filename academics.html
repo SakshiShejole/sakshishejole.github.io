@@ -2,166 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Academics – Sakshi Shejole</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Open+Sans&display=swap');
-
-    /* Make body full screen and hide scroll overflow horizontally */
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow-x: hidden;
-      font-family: 'Open Sans', sans-serif;
-      color: #fff;
-    }
-
-    /* Video background styling */
-    #bg-video {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      z-index: -1;
-      filter: brightness(0.5) contrast(1.2);
-    }
-
-    /* Content wrapper with semi-transparent overlay */
-    .content-wrapper {
-      position: relative;
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 2rem 3rem;
-      background: rgba(0, 0, 20, 0.75);
-      border-radius: 12px;
-      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
-      z-index: 1;
-    }
-
-    header, footer {
-      text-align: center;
-      font-family: 'Orbitron', sans-serif;
-      color: #f9d71c;
-      text-shadow: 0 0 10px #f9d71c;
-      margin-bottom: 1rem;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.2rem;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 1rem;
-      font-size: 1.1rem;
-      transition: color 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #f9d71c;
-      text-shadow: 0 0 8px #f9d71c;
-    }
-
-    section h2 {
-      color: #ffdd57;
-      margin-top: 2rem;
-      font-family: 'Orbitron', sans-serif;
-      font-weight: 600;
-      text-shadow: 0 0 5px #ffdd57;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0.8rem;
-    }
-
-    li {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
-    }
-
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 600px) {
-      .content-wrapper {
-        margin: 1rem;
-        padding: 1rem 1.5rem;
-      }
-
-      h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astrogirl - Academic</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="stars"></div>
+  <div class="container">
+    <h1>Academic Background</h1>
+    <p>
+      I have a strong academic foundation in computer science and astrophysics,
+      enriched by practical experience and ongoing research.
+    </p>
 
-  <!-- Background video -->
-  <video id="bg-video" autoplay muted loop playsinline>
-    <source src="https://cdn.videvo.net/videvo_files/video/free/2019-05/small_watermarked/190504_04_Earth_Space_04_preview.webm" type="video/webm">
-    <source src="https://cdn.videvo.net/videvo_files/video/free/2019-05/small_watermarked/190504_04_Earth_Space_04_preview.mp4" type="video/mp4">
-    <!-- Backup text -->
-    Your browser does not support the video tag.
-  </video>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>M.Sc. in Scientific Computing</strong> — 2024</li>
+      <li><strong>B.E. in Information Technology Engineering</strong> — 2016</li>
+      <li><strong>Qualified UGC NET (Computer Science & Applications)</strong> — Dec 2024 (Ph.D. Eligibility)</li>
+    </ul>
 
-  <div class="content-wrapper">
-    <header>
-      <h1>My Academic Journey</h1>
-      <p>Where passion for space meets scientific pursuit 🚀</p>
-    </header>
+    <h2>Workshops & Courses</h2>
+    <ul>
+      <li>High Performance Computing for Astrophysics and Astronomy — SKA-India Consortium & IIT Kharagpur (2021)</li>
+      <li>Basic Course in Practical Astronomy — Kesariwada Observatory, Pune (2014)</li>
+      <li>Astrophysics & Astronomy research-oriented workshops and seminars</li>
+    </ul>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="volunteer.html">Volunteering</a>
-      <a href="writings.html">Writings</a>
-      <a href="poetry.html">Poetry</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <section>
-      <h2>🎓 Education</h2>
-      <ul>
-        <li><strong>M.Sc. in Scientific Computing</strong> – Advanced computational modeling and simulations</li>
-        <li><strong>B.E. in Information Technology</strong> – Foundation in computer science, data structures, and software engineering</li>
-      </ul>
-
-      <h2>🔬 Research Work</h2>
-      <ul>
-        <li><strong>Master’s Thesis at MIT:</strong> Worked on GANs for synthetic galaxy image generation and super-resolution techniques for N-body simulations</li>
-        <li><strong>PhD Project Plan:</strong> Deep learning-based super-resolution accelerator for galaxy formation simulations using the IllustrisTNG dataset</li>
-      </ul>
-
-      <h2>📚 Achievements</h2>
-      <ul>
-        <li>UGC NET (Computer Science & Applications) Qualified – December 2024</li>
-        <li>High Performance Computing for Astrophysics Workshop – SKA-India & IIT Kharagpur</li>
-        <li>AI Prompt Engineering & Hindi QA Language Model Project</li>
-      </ul>
-    </section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Scientific computing and simulations</li>
+      <li>Deep learning and AI applications in astrophysics</li>
+      <li>Data analysis with Python, C++, and related tools</li>
+      <li>Research in cosmology, galaxy formation, and computational astrophysics</li>
+    </ul>
 
     <footer>
-      &copy; 2025 Sakshi Shejole | Astrogirl ✨
+      <p>&copy; 2025 Astrogirl | Sakshi Shejole</p>
     </footer>
   </div>
 </body>
 </html>
+
 
 
