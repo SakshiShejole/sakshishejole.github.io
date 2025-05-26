@@ -3,56 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Astrogirl - Research</title>
+  <title>Astrogirl | Research</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: black;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+    }
+    nav ul.navbar {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0,0,0,0.8);
+      padding: 1rem;
+      list-style: none;
+      margin: 0;
+    }
+    nav ul.navbar li {
+      margin: 0 1rem;
+    }
+    nav ul.navbar li a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1, h2 {
+      color: #ffccff;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #ff66cc;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 4px;
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #ff99cc;
+    }
+    .project .supervisor, .project .dates, .project .institution {
+      font-style: italic;
+      color: #bbb;
+      margin: 0.2rem 0;
+    }
+    .project p.description {
+      line-height: 1.5;
+      color: #ddd;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-  <div class="stars"></div>
-  <nav class="navbar">
-  <ul>
-    <li><a href="index.html">About</a></li>
-    <li><a href="academic.html">Academic</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="writings.html">Writings</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="academic.html">Academics</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="writing.html">Writings</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
   </nav>
-  <div class="container">
-    <h1>Research Work & Projects</h1>
-    
-    <p>
-      I focus on computational astrophysics and cosmology, leveraging deep learning and scientific computing to explore galaxy formation, simulations, and data analysis.
-    </p>
 
-    <h2>Current Research</h2>
-    <ul>
-      <li>
-        <strong>Deep Learning-based Super-Resolution for Cosmological Simulations</strong><br />
-        Developing acceleration algorithms to enhance resolution in N-body galaxy formation simulations using deep neural networks, trained on Virgo Millennium and IllustrisTNG datasets.
-      </li>
-      <li>
-        <strong>Computational Analysis of Galaxy Evolution</strong><br />
-        Using 2D projected galaxy images (mass density maps) to model and predict evolutionary patterns with AI.
-      </li>
-    </ul>
+  <div class="content">
+    <h1>🔭 Research Experience</h1>
 
-    <h2>Past Projects</h2>
-    <ul>
-      <li>Generative Adversarial Networks (GANs) for synthetic galaxy image generation (MIT research internship)</li>
-      <li>Astrophysics data pipelines integrating AI tools for Hindi language Question Answering systems</li>
-      <li>Development of astronomy outreach simulations and software demos</li>
-    </ul>
+    <div class="project">
+      <h3>Deep Learning Based Acceleration for Galaxy Formation and Evolution Simulations</h3>
+      <p class="supervisor"><strong>Supervisor:</strong> Dr. Aakash Patil</p>
+      <p class="dates">Dec 2023 – Present</p>
+      <p class="institution">Stanford University, California</p>
+      <p class="description">
+        I began my search for cosmological N-body simulations datasets for galaxy formation by studying IllustrisTNG50, IllustrisTNG100, IllustrisTNG300, and Millennium Simulations, which include large cosmological magnetohydrodynamical simulations. I investigated an existing deep learning super-resolution model applied to images and designed a super-resolution acceleration algorithm for cosmological N-body simulations. My model is trained on galaxy formation datasets from Virgo Millennium Simulation and Illustris Simulations. Currently, the model evaluation is underway.
+      </p>
+    </div>
 
-    <h2>Publications & Presentations</h2>
-    <ul>
-      <li>Live webinar on Astronomical Simulations, Parbhani Astronomical Society (2020)</li>
-      <li>Demonstration of astronomical software at Rajashree Shahu College of Engineering, Pune</li>
-      <li>Multiple educational talks on Mars, Solar System, and space missions for schools and science clubs</li>
-    </ul>
+    <div class="project">
+      <h3>Generation of Synthetic Galaxy Images with GAN</h3>
+      <p class="supervisor"><strong>Supervisor:</strong> Prof. Mark Vogelsberger</p>
+      <p class="dates">Oct 2020 – Dec 2022</p>
+      <p class="institution">Massachusetts Institute of Technology, USA</p>
+      <p class="description">
+        Our project designed chained neural networks using multiple GAN models to generate synthetic galaxy images, beginning with Progressive GAN. Using galaxy image datasets, we explored upsampling techniques and larger data inputs. To mitigate discriminator overfitting due to limited data, we investigated Adaptive Discriminator Augmentation mechanisms. We evaluate results with quantitative metrics like FID score, PSNR, and MS-SSIM.
+      </p>
+    </div>
 
-    <footer>
-      <p>&copy; 2025 Astrogirl | Sakshi Shejole</p>
-    </footer>
+    <div class="project">
+      <h3>Cosmological N-body Simulations</h3>
+      <p class="supervisor"><strong>Supervisor:</strong> Prof. Tirthankar Roy Choudhury</p>
+      <p class="dates">Jan 2020 – Sept 2020</p>
+      <p class="institution">Tata Institute of Fundamental Research, India</p>
+      <p class="description">
+        Worked on cosmological N-body simulations to improve accuracy in analyzing simulations through numerical techniques, enhancing our understanding of cosmic structures. Studied cluster formation, galaxy evolution, large-scale structures, and initial conditions. Performed simulations with software like GADGET2 and 2LPTic.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Data Pre-Processing Tool for Barycentric Correction</h3>
+      <p class="supervisor"><strong>Supervisor:</strong> Mr. Ajay Vibhute</p>
+      <p class="dates">July 2018 – May 2019</p>
+      <p class="institution">Inter-university Center for Astronomy and Astrophysics, India</p>
+      <p class="description">
+        Developed a data pre-processing tool for Barycentric Correction by modifying event and orbit files. Gained experience working with time series data and wrote a generic Python script using linear interpolation for barycentric correction. Used FITS data format and tools like HEASOFT, along with Python libraries astropy and numpy.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Data Analysis of Variable Stars – RR Gem & W-Uma</h3>
+      <p class="supervisor"><strong>Supervisor:</strong> Mr. Anirudhha Deshpande</p>
+      <p class="dates">June 2015 – June 2016</p>
+      <p class="institution">Kesariwada Observatory, Pune, India</p>
+      <p class="description">
+        Conducted optical photometric observations using a Newtonian telescope on variable stars over multiple nights. Focused on RR-Lyrae stars (RR Gem) exhibiting the Blazhko Effect, and assisted with observations of the W-Uma variable star. Utilized data and resources from the American Association of Variable Star Observers (AAVSO).
+      </p>
+    </div>
   </div>
+
 </body>
 </html>
+
